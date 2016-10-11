@@ -21,7 +21,7 @@ namespace WoogieWare.Library.TvBoxSet.Test
                 new Episode
                 {
                     Name = "Mountain and the viper",
-                    Rating = 1,
+                    Rating = 2,
                     RunningTime = TimeSpan.MaxValue,
                     Synopsis = "Cool Episode"
                 }
@@ -53,6 +53,7 @@ namespace WoogieWare.Library.TvBoxSet.Test
             Assert.That(actualEpisode.Rating, Is.EqualTo(expectedEpisode.Rating));
             Assert.That(actualEpisode.RunningTime, Is.EqualTo(expectedEpisode.RunningTime));
             Assert.That(actualEpisode.Synopsis, Is.EqualTo(expectedEpisode.Synopsis));
+       
         }
     }
 }
